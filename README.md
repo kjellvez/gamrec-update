@@ -52,3 +52,8 @@ You can quickly read the logs right in your terminal:
 **On Windows:**
 You can navigate to `C:\GAMWork` in File Explorer and open the `.log` files directly in **Notepad**, or import the `all_users.csv` into **Excel** for easier filtering. Alternatively, view them in PowerShell:
 * `Get-Content C:\GAMWork\SetRecoveryEmail_Success.log`
+
+## 🐛 Support & Feedback
+If you run into any issues please open an issue on the [GitHub Repository](https://github.com/kjellvez/gamrec-update/issues). 
+
+*Created with ❤️ by [beIT](https://be-it.no).*
