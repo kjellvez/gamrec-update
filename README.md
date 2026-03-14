@@ -4,7 +4,7 @@ A lightweight, high-speed tool for Google Workspace administrators to automatica
 
 This script pulls all users via [GAM](https://github.com/GAM-team/GAM), checks if they are missing a recovery email, and securely updates their profile using any external secondary email already attached to their account (e.g., a personal alias labeled "home" or "work").
 
-By processing the user data locally (using PowerShell on Windows or an embedded Python script on Linux), this tool can evaluate thousands of users minimizing Google Workspace API call.  It will do an API call if a user is updated, using a PATCH request.
+By processing the user data locally (using PowerShell on Windows or an embedded Python script on Linux), this tool can evaluate thousands of users while minimizing Google Workspace API call.  It will do an API call if a user is updated, using a PATCH request.
 
 ## ⚙️ Prerequisites
 1. **GAM 7+ Installed and Authenticated:** You must have GAM installed and authorized with Domain-Wide Delegation in your Google Workspace environment. 
@@ -23,7 +23,7 @@ By processing the user data locally (using PowerShell on Windows or an embedded 
    ./gam_set_recovery_email.sh
    ```
 
-## 🚀 How to Use (Windows 11)
+## 🚀 How to Use (Windows)
 1. Download `GAM_SetRecoveryEmail.ps1`.
 2. Right-click the script and select **Edit** to update the **CONFIGURATION** block with your domain and GAM installation path.
 3. Right-click the file and select **Run with PowerShell**. 
