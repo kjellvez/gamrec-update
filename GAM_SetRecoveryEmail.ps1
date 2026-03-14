@@ -1,6 +1,13 @@
 <#
 .SYNOPSIS
 Bulk Recovery Email Updater for Google Workspace using GAM.
+.VERSION
+1.0.0 (March 2026)
+.AUTHOR
+Created by Kjell @ beIT (https://be-it.no)
+Professional IT support and automation solutions.
+.LINK
+https://github.com/kjellvez/gamrec-update
 
 .INSTRUCTIONS
 1. Edit the "CONFIGURATION" block below with your domain and GAM path.
