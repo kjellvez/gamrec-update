@@ -38,16 +38,6 @@ Once you have reviewed the `SetRecoveryEmail_Success.log` and are ready to apply
 ## 📁 Output Files & Logging
 When the script runs, it will automatically create a working directory (default: `C:\GAMWork` on Windows or `/root/GAMWork` on Linux) and generate three files:
 
-## 📁 Output Files & Logging
-When the script runs, it will automatically create a working directory (default: `C:\GAMWork` on Windows or `/root/GAMWork` on Linux) and generate three files:
-
-* `all_users.csv`: A local export of your Workspace directory's current email data. This file remains in the folder and is **overwritten** with fresh data each time you run the script.
-* `SetRecoveryEmail_Success.log`: A continuous, running log of every user account that was successfully updated (or *would* be updated in Dry Run mode). New runs are **appended** to the bottom of this file with a timestamped header.
-* `SetRecoveryEmail_Issues.log`: A continuous, running log of users who were skipped because they lacked a valid external email, or accounts that threw an API error. New runs are **appended** to the bottom of this file with a timestamped header.
-
-## 📁 Output Files & Logging
-When the script runs, it will automatically create a working directory (default: `C:\GAMWork` on Windows or `/root/GAMWork` on Linux) and generate three files:
-
 * `all_users.csv`: A local export of your Workspace directory's current email data. This file remains in the folder and is **overwritten** with fresh data each time you run the script.
 * `SetRecoveryEmail_Success.log`: A continuous, running log of every user account that was successfully updated (or *would* be updated in Dry Run mode). New runs are **appended** to the bottom of this file with a timestamped header.
 * `SetRecoveryEmail_Issues.log`: A continuous, running log of users who were skipped because they lacked both recovery and valid external email, or accounts that threw an API error. New runs are **appended** to the bottom of this file with a timestamped header.
