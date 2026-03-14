@@ -34,3 +34,31 @@ By default, both scripts are configured with `DryRun = true` (or `DRY_RUN=true`)
 When you run the script for the first time, it will **NOT** make any changes to Google Workspace. Instead, it will generate simulated log files so you can verify exactly which accounts *would* be updated.
 
 Once you have reviewed the `SetRecoveryEmail_Success.log` and are ready to apply the changes, simply change the `DryRun` variable to `false` inside the script and run it again.
+
+## 📁 Output Files & Logging
+When the script runs, it will automatically create a working directory (default: `C:\GAMWork` on Windows or `/root/GAMWork` on Linux) and generate three files:
+
+## 📁 Output Files & Logging
+When the script runs, it will automatically create a working directory (default: `C:\GAMWork` on Windows or `/root/GAMWork` on Linux) and generate three files:
+
+* `all_users.csv`: A local export of your Workspace directory's current email data. This file remains in the folder and is **overwritten** with fresh data each time you run the script.
+* `SetRecoveryEmail_Success.log`: A continuous, running log of every user account that was successfully updated (or *would* be updated in Dry Run mode). New runs are **appended** to the bottom of this file with a timestamped header.
+* `SetRecoveryEmail_Issues.log`: A continuous, running log of users who were skipped because they lacked a valid external email, or accounts that threw an API error. New runs are **appended** to the bottom of this file with a timestamped header.
+
+## 📁 Output Files & Logging
+When the script runs, it will automatically create a working directory (default: `C:\GAMWork` on Windows or `/root/GAMWork` on Linux) and generate three files:
+
+* `all_users.csv`: A local export of your Workspace directory's current email data. This file remains in the folder and is **overwritten** with fresh data each time you run the script.
+* `SetRecoveryEmail_Success.log`: A continuous, running log of every user account that was successfully updated (or *would* be updated in Dry Run mode). New runs are **appended** to the bottom of this file with a timestamped header.
+* `SetRecoveryEmail_Issues.log`: A continuous, running log of users who were skipped because they lacked both recovery and valid external email, or accounts that threw an API error. New runs are **appended** to the bottom of this file with a timestamped header.
+
+### How to View the Logs
+**On Linux:**
+You can quickly read the logs right in your terminal:
+* View all successes: `cat /root/GAMWork/SetRecoveryEmail_Success.log`
+* Scroll through issues: `less /root/GAMWork/SetRecoveryEmail_Issues.log` (press `q` to quit)
+* Search for a specific user: `grep "username" /root/GAMWork/SetRecoveryEmail_Success.log`
+
+**On Windows:**
+You can navigate to `C:\GAMWork` in File Explorer and open the `.log` files directly in **Notepad**, or import the `all_users.csv` into **Excel** for easier filtering. Alternatively, view them in PowerShell:
+* `Get-Content C:\GAMWork\SetRecoveryEmail_Success.log`
