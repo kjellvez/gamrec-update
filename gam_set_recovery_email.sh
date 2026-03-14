@@ -1,6 +1,13 @@
 #!/bin/bash
 
 # ======================================================================
+# GAM Bulk Recovery Email Updater
+# Version: 1.0.0 (2026-03-14)
+# Author: Kjell @ beIT (https://be-it.no)
+# Source: https://github.com/kjellvez/gamrec-update
+# ======================================================================
+
+# ======================================================================
 # INSTRUCTIONS
 # 1. Edit the "CONFIGURATION" block below with your domain and GAM path.
 # 2. Ensure DRY_RUN is set to true for your first run.
