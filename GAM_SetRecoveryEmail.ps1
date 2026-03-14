@@ -22,7 +22,7 @@ https://github.com/kjellvez/gamrec-update
 
 $DryRun  = $true                  # Change to $false ONLY when ready to apply changes!
 $Domain  = "@yourdomain.com"      # Your primary Workspace domain (e.g., "@company.com")
-$GamPath = "C:\GAM\gam.exe"       # The full path to your gam.exe installation
+$GamPath = "C:\GAM7\gam.exe"       # The full path to your gam.exe installation
 $WorkDir = "C:\GAMWork"  # Folder where logs and the CSV will be saved
 
 # ======================================================================
