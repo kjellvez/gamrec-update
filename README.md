@@ -11,7 +11,7 @@ By processing the user data locally (using PowerShell on Windows or an embedded 
    * [GAM Installation Instructions](https://github.com/GAM-team/GAM/wiki/How-to-Install-GAM7)
 2. **Google Admin Privileges:** The account running GAM must have permissions to update user security settings.
 
-## 🚀 How to Use (Linux / Debian / Proxmox)
+## 🚀 How to Use (Linux)
 1. Download `gam_set_recovery_email.sh` to your machine.
 2. Open the script in a text editor (like `nano`) and update the **CONFIGURATION** block at the top with your specific domain and paths.
 3. Make the script executable:
